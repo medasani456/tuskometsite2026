@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TuS Komet Arsten Cricket</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css"></head>
+<body><div id="site-header"></div>
+<main class="wrap" id="top">
+  <div class="hero"><article class="lead" id="lead"></article><aside class="next" aria-label="Next match" id="next"></aside></div>
+  <section id="matches"><div class="head"><h2>Matches</h2><a href="matches.html">Full schedule and earlier fixtures</a></div><div id="r-matches"></div></section>
+  <section id="news"><div class="head"><h2>News</h2><a href="news.html">All news</a></div><div id="r-news"></div></section>
+  <section id="players"><div class="head"><h2>Players</h2><a href="players.html">Players page</a></div><div id="r-players"></div></section>
+  <section id="seasons"><div class="head"><h2>Seasons</h2><a href="seasons.html">Seasons page</a></div><div id="r-seasons"></div></section>
+  <section id="gallery"><div class="head"><h2>Gallery</h2><a href="gallery.html">Gallery page</a></div><div id="r-gallery"></div></section>
+  <section id="availability"><div class="head"><h2>Availability</h2><a href="availability.html">Availability page</a></div><div id="r-availability"></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/app.js"></script>
+<script src="assets/sections.js"></script>
+<script>
+(async()=>{
+  await Komet.init(location.pathname);
+  const $=id=>document.getElementById(id);
+  await Promise.all([
+    Sections.hero($('lead'),$('next')),
+    Sections.matches($('r-matches'),{limit:6}),
+    Sections.news($('r-news'),{limit:6}),
+    Sections.players($('r-players')),
+    Sections.seasons($('r-seasons')),
+    Sections.gallery($('r-gallery')),
+    Sections.availability($('r-availability'))
+  ]);
+  Komet.finish();
+})();
+</script></body></html>

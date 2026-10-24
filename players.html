@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TuS Komet Arsten Cricket</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css"></head>
+<body><div id="site-header"></div>
+<main class="wrap" id="top">
+  <section class="first"><div class="head"><h1>Players</h1></div><div id="root"></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/app.js"></script>
+<script src="assets/sections.js"></script>
+<script>
+(async()=>{await Komet.init(location.pathname);await Sections.players(document.getElementById('root'));Komet.finish();})();
+</script></body></html>

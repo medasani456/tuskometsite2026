@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Jonas Weber">
+<rect width="200" height="200" fill="#f6d5d1"/>
+<path d="M28 200c0-46 32-72 72-72s72 26 72 72z" fill="#a8332c"/>
+<rect x="88" y="104" width="24" height="26" rx="8" fill="#c68e66"/>
+<circle cx="100" cy="78" r="34" fill="#c68e66"/>
+<path d="M66 74c2-26 22-38 40-34 16 3 28 16 28 34-8-12-20-18-34-18-14 0-26 6-34 18z" fill="#2a1514"/>
+<text x="100" y="186" text-anchor="middle" font-family="Arial Narrow,Arial,sans-serif" font-weight="700" font-size="30" fill="#fff">11</text>
+</svg>

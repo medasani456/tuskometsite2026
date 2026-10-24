@@ -1,0 +1,16 @@
+# Site settings. One "key = value" per line. Lines starting with # are ignored.
+club_name = TuS Komet Arsten
+short_name = TuS Komet Arsten
+section = Cricket
+location = Bremen
+contact_email =
+footer_text = Sample content, replace before publishing
+locale = en-GB
+# Optional logo file inside the images folder, e.g. images/logo.png (leave empty for the comet icon)
+logo =
+tagline = Cricket in Arsten, outdoors in summer and indoors in winter
+home_cta_text = Mark my availability
+# Players answer through a form (Google Forms works). Paste the form link here:
+availability_form_url =
+# Optional: the form's response sheet published as CSV (File > Share > Publish to web > CSV). Leave empty to use availability.csv
+availability_csv_url =
